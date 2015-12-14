@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<!DOCTYPE struts  PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd" >
+
+
+<struts>
+   
+
+    <include file="struts-part1.xml"/>
+	
+    <constant name="struts.devMode" value="false"/>
+    
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
+    
+    <package name="scuthnweb" extends="struts-default" namespace="/">
+      <interceptors>
+       <interceptor name="AuthorityIntercept" class="com.quickpayatm.action.authority.AccountLoginInterceptor"/>                                 
+       <!-- 拦截器栈配置 -->
+       <interceptor-stack name="AuthorityInterceptStack">
+          <interceptor-ref name="AuthorityIntercept"/>
+          <interceptor-ref name="defaultStack"/>
+       </interceptor-stack>
+     </interceptors>
+                 
+       <action name="CheckAccountBalance" class="CheckAccountBalance">
+          <result name="success">/WEB-INF/jsp/op_checkBalance.jsp</result>
+       </action>
+       <action name="DepositToAccount" class="DepositToAccount">
+          <result name="success">/WEB-INF/jsp/op.jsp</result>
+          <result name="error">/WEB-INF/jsp/op.jsp</result>
+          <result name="verror">/WEB-INF/jsp/op_deposit.jsp</result>
+       </action>
+       <action name="DrawFromAccount" class="DrawFromAccount">
+          <result name="success">/WEB-INF/jsp/op.jsp</result>
+          <result name="error">/WEB-INF/jsp/op.jsp</result>
+          <result name="verror">/WEB-INF/jsp/op_draw.jsp</result>          
+       </action>
+       <action name="Login" class="Login">
+          <result name="success">/WEB-INF/jsp/op.jsp</result>
+          <result name="error">/WEB-INF/jsp/login.jsp</result>
+          <result name="verror">/WEB-INF/jsp/login.jsp</result>          
+       </action>
+       <action name="ModifyPassword" class="ModifyPassword">
+          <result name="success">/WEB-INF/jsp/op.jsp</result>
+          <result name="error">/WEB-INF/jsp/op.jsp</result>
+          <result name="verror">/WEB-INF/jsp/op_modifyPassword.jsp</result>                    
+       </action>
+       <action name="TransferAccount" class="TransferAccount">
+          <result name="success">/WEB-INF/jsp/op.jsp</result>
+          <result name="error">/WEB-INF/jsp/op.jsp</result>
+          <result name="verror">/WEB-INF/jsp/op_transfer.jsp</result>                    
+       </action>
+       <action name="LoginOut" class="LoginOut">
+          <result name="success">/WEB-INF/jsp/login.jsp</result>
+       </action>
+<!-- WEB-INF下界面转发Action -->
+       <action name="pfs" class="pfs">
+           <result name="/WEB-INF/jsp/top.jsp">/WEB-INF/jsp/top.jsp</result>
+           <result name="/WEB-INF/jsp/login.jsp">/WEB-INF/jsp/login.jsp</result>           
+       </action>      
+       <action name="pfs_s" class="pfs_s">  
+           <result name="/WEB-INF/jsp/op_deposit.jsp">/WEB-INF/jsp/op_deposit.jsp</result>
+           <result name="/WEB-INF/jsp/op_draw.jsp">/WEB-INF/jsp/op_draw.jsp</result>
+           <result name="/WEB-INF/jsp/op_modifyPassword.jsp">/WEB-INF/jsp/op_modifyPassword.jsp</result>
+           <result name="/WEB-INF/jsp/op_transfer.jsp">/WEB-INF/jsp/op_transfer.jsp</result>           
+           <result name="/WEB-INF/jsp/op.jsp">/WEB-INF/jsp/op.jsp</result> 
+           <result name="error">/WEB-INF/jsp/login.jsp</result>
+       </action>
+       
+    </package>
+   
+</struts>
