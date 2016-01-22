@@ -1,5 +1,4 @@
-@import "font.css";
-/**
+﻿/**
 body{
   Font-size:10%;
 }
@@ -35,7 +34,7 @@ body{
   height: 120px;
   top: 30%;
   left: 36.5%;
-  font-family:SHSCN-Bold;
+  font-family:微软雅黑;
 }
 
 .topButton{
@@ -66,13 +65,13 @@ body{
   color:#FF9900;
   width:200px;
   height:100px;
-  font-family:SHSCN-Bold;
+  font-family:微软雅黑;
   font-size:28px;
 }
 
 .buttonText{
   cursor:pointer;
-  font-family:SHSCN-Bold;
+  font-family:微软雅黑;
   left: 50px;
   top: 30px;
   position: absolute;
@@ -110,11 +109,8 @@ body{
 }
 
 .introText{
-    position: relative;
-    left: 80%;
-    top: 50%;
     font-size:30px;
-    font-family:SHSCN-Bold;
+    font-family:微软雅黑;
 }
 
 .pageInfo{

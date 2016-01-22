@@ -1,4 +1,3 @@
-@import "font.css";
 /**
 body{
   Font-size:10%;
@@ -10,10 +9,10 @@ body{
     -moz-transition:border linear .2s,-moz-box-shadow linear .5s;
     -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
     outline:none;
-	border-color:rgba(241,39,242,.75);
-    box-shadow:0 0 30px rgba(241,39,232,.5);
-    -moz-box-shadow:0 0 30px rgba(241,39,232,.5);
-    -webkit-box-shadow:0 0 30px rgba(241,39,232,3);
+	border-color:rgba(255,153,0,.75);
+    box-shadow:0 0 80px rgba(255,153,0,.5);
+    -moz-box-shadow:0 0 80px rgba(255,153,0,.5);
+    -webkit-box-shadow:0 0 80px rgba(255,153,0,3);
 }
 
 .inputTxt{
@@ -21,13 +20,13 @@ body{
    width:250px;
    height:60px;
    font-size:24px;
-   font-family:SHSCN-Bold;
+   font-family:微软雅黑;
    border-radius:10px;
 }
 
 .inputLabel{
    font-size:24px;
-   font-family:SHSCN-Bold;
+   font-family:微软雅黑;
 }
 
 .inputGroup{

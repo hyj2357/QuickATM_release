@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,14 +34,18 @@
 	</div>
   </div>
   <div class="intro3">
-     <label class="introText">
-	   <strong>快捷支付体验</strong>
-	 </label>
+    <div>
+       <img src="pages/image/Snip20151215_1.png" style="width:50%;height:83%"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <label class="introText">
+	     <strong>快捷支付体验</strong>
+	   </label>
+	 </div>
   </div>
   <div class="intro1">
      <label class="introText" style="left:10%;">
 	    <strong>安全支付保障</strong>
-	 </label>
+	 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src="pages/image/Snip20151215_2.png" style="width:50%;height:83%"/>
   </div>
   <div class="intro2">
      <label class="introText">
@@ -49,12 +53,13 @@
 	 </label>
   </div>
   <div class="pageInfo">
-     <div class="introText" style="left:50%;top:30%">
+     <div class="introText" style="position:relative;left:50%;top:30%">
 	  	<a href="http://www.baidu.com">
 		    <strong>联系我们</strong>
 		</a>
 	 </div>
-     <div class="introText" style="left:42%;">
+     <div class="introText" style="position: relative;
+left:42%;">
 	  	<strong>备案信息:XXXXXXXXXXXXX</strong>  
 	 </div>
   </div>
