@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,8 +7,7 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <link href="pages/css/top_style.css" rel="stylesheet">
   <link href="pages/css/bootstrap.min.css" rel="stylesheet">
-  <link href="pages/css/login_style.css" rel="stylesheet">
-  <link href="pages/css/font.css" rel="stylesheet">  
+  <link href="pages/css/login_style.css" rel="stylesheet">  
   <script src="pages/js/jquery-2.1.4.min.js"></script>
 </head>
 
@@ -42,7 +41,7 @@
        if(e!=null){
     	   out.print(   
     	    "<div class=\"blackPurdah\" style=\"height:10%;position:fixed;top:16%;\">"
-    	   +"<span style=\"font-family:SHSCN-Bold;font-size:36px;color:#FF9900;padding-left:40%\">"
+    	   +"<span style=\"font-family:微软雅黑;font-size:36px;color:#FF9900;padding-left:40%\">"
     	   +"<strong>"+e+"</strong>"
     	   +"<span>"
            +"</div>");
@@ -54,10 +53,10 @@
          <img style="cursor:pointer;position:relative;top:5%;" src="pages/image/prev.png"/>
 	  </a>
 	  <a href="http://139.129.24.81:8082/QuickATM/pfs?pagePath=top.jsp">
-	     <label style="cursor:pointer;color:rgba(255,255,255,0.6);font-family:SHSCN-Bold;font-size:28px;margin-top:5px">返回主页</label>
+	     <label style="cursor:pointer;color:rgba(255,255,255,0.6);font-family:微软雅黑;font-size:28px;margin-top:5px">返回主页</label>
 	  </a>
 	  <div style="cursor:pointer;top: 5px;position: fixed;right: 10%;">
-	     <label style="color: #FF9900;font-family: SHSCN-Bold;font-size: 36px;margin-left: 1000px;margin-top: 15px;">
+	     <label style="color: #FF9900;font-family: 微软雅黑;font-size: 36px;margin-left: 1000px;margin-top: 15px;">
 	        <strong>Q&A</strong>
 	     </label>
 	  </div>
@@ -109,12 +108,13 @@
   </div>
   -->
     <div class="pageInfo">
-     <div class="introText" style="left:50%;top:30%">
+     <div class="introText" style="position:relative;left:50%;top:30%">
 	  	<a href="http://www.baidu.com">
 		    <strong>联系我们</strong>
 		</a>
 	 </div>
-     <div class="introText" style="left:42%;">
+     <div class="introText" style="position: relative;
+left:42%;">
 	  	<strong>备案信息:XXXXXXXXXXXXX</strong>  
 	 </div>
   </div>
